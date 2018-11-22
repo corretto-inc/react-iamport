@@ -5,9 +5,9 @@ class IamportComponent extends React.Component {
     constructor() {
         super(...arguments);
         this.loadJquery = () => {
-            const { loadedJquery } = this.props;
+            const { jqueryLoaded } = this.props;
             // 이미 jquery를 사용하고 있다면 다시 import할 필요가 없다.
-            if (loadedJquery) {
+            if (jqueryLoaded) {
                 this.loadIamportSdk();
                 return;
             }

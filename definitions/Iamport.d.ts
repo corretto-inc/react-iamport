@@ -5,7 +5,7 @@ export interface IamportComponentRenderProps {
 export interface IamportProps {
     identificationCode: string;
     params: object;
-    loadedJquery?: boolean;
+    jqueryLoaded?: boolean;
     onSuccess?: (response: any) => void;
     onFailed?: (response: any) => void;
     onCompleted?: (response: any) => void;
