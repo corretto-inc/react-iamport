@@ -34,6 +34,7 @@ class App extends Component {
             buyer_postcode: '123-456',
             m_redirect_url: 'https://www.yourdomain.com/payments/complete',
           }}
+          jqueryLoaded={false}
           onFailed={err => console.log(err)}
           onSuccess={res => console.log(res)}
           render={(renderProps) => (

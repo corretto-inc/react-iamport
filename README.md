@@ -33,6 +33,7 @@ ReactDOM.render(
     }}
     onFailed={err => console.log(err)}
     onSuccess={res => console.log(res)}
+    jqueryLoaded={false}
     render={(renderProps) => (
       <button
         type="button"

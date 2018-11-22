@@ -7,7 +7,7 @@ export interface IamportComponentRenderProps {
 export interface IamportProps {
   identificationCode: string;
   params: object;
-  loadedJquery?: boolean;
+  jqueryLoaded?: boolean;
 
   onSuccess?: (response: any) => void;
   onFailed?: (response: any) => void;
@@ -29,10 +29,10 @@ export default class IamportComponent extends React.Component<
   State
 > {
   loadJquery = () => {
-    const { loadedJquery } = this.props;
+    const { jqueryLoaded } = this.props;
 
     // 이미 jquery를 사용하고 있다면 다시 import할 필요가 없다.
-    if (loadedJquery) {
+    if (jqueryLoaded) {
       this.loadIamportSdk();
       return;
     }
