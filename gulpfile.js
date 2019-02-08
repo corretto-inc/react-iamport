@@ -21,6 +21,6 @@ gulp.task('clean', function () {
       .pipe(clean());
 });
 
-gulp.task('default', [], function(cb) {
+gulp.task('default', function(cb) {
   runSequence('clean', 'build', cb);
 });
